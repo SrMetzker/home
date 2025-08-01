@@ -6,59 +6,74 @@
     justify-content: center;
   }
 
-  /* #Region - main-content */
+  /* --- main content --- */
+
+  main .main-content {
+    padding: 5%;
+  }
+
   main .main-content .text p {
     font-size: 1em;
   }
 
   main .main-content .text h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
-  /* #End Region */
 
-  /* #Region - figure */
+  /* --- figure --- */
+
   main figure img {
-    margin: 3%;
     width: 250px;
     height: 250px;
-    border-radius: 200px;
   }
-  /* #End Region */
 
-  /* #Region - techs */
+  /* --- techs --- */
+
   main .techs {
-    padding: 3%;
     justify-content: space-between;
   }
 
   main .techs h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
+    margin-bottom: 3%;
   }
 
   main .techs .cards-container .card {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
   }
 
   main .techs .cards-container i {
     font-size: 3em;
   }
-  /* #End Region */
 
-  /* #Region - projects */
-  main .projects {
-    padding: 3%;
+  /* --- projects --- */
+
+  main .projects .projects-list {
+    display: flex;
   }
 
   main .projects h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
-  /* #End Region */
+
+  main .projects .projects-list h3, p {
+    font-size: 80%;
+  }
+
+  main .projects .projects-list .project-card {
+    padding: 3%;
+  }
+
+  main .projects .projects-list .project-card {
+    width: 80%;
+  }
 }
 
 @media (max-width: 700px) {
 
-  /* #Region - Header */
+  /* --- header --- */
+
   header {
     flex-direction: column;
     align-items: center;
@@ -82,9 +97,9 @@
   header nav a {
     font-size: 1.2em;
   }
-  /* #End Region */
 
-  /* #Region - main-content */
+  /* --- main-content --- */
+
   main .main-content {
     display: flex;
     flex-direction: column;
@@ -94,20 +109,44 @@
     font-size: 1.2em;
   }
 
-  /* #End Region */
+  /* --- figure --- */
 
-  /* #Region - Techs */
+  main figure img {
+    margin-top: 6%;
+    margin-bottom: 3%;
+  }
+
+  /* --- techs --- */
+
   main .techs .cards-container .card {
     width: 60px;
     height: 60px;
+    margin: 0.25em;
   }
 
   main .techs .cards-container i {
     font-size: 2em;
   }
-  /* #End Region */
 
-  /* #Region - Projects */
+  /* --- projects --- */
 
-  /* #End Region */
+  main .projects .projects-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .projects .projects-list .project-card {
+    width: 80%;
+    margin-bottom: 5%;
+  }
+
+  main .projects .projects-list .project-card .project {
+    width: 100%;
+    height: 100%;
+  }
+
+  main .projects .projects-list h3, p {
+    font-size: 95%;
+  }
 }
