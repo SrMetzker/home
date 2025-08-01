@@ -3,31 +3,62 @@
     width: 100%;
 
     flex-direction: column;
-    align-items: center;
     justify-content: center;
   }
 
-  .main-content {
-    width: 100%;
-    align-items: center;
-    margin-bottom: 15%;
-  }
-
-  main .main-content .text, .techs {
-    text-align: center;
-  }
-
+  /* #Region - main-content */
   main .main-content .text p {
-    width: 100%;
-    font-size: 0.9em;
+    font-size: 1em;
   }
 
-  main .techs .cards-container, .main-content .text p {
-    margin-top: 32px;
+  main .main-content .text h2 {
+    font-size: 1.2em;
   }
+  /* #End Region */
+
+  /* #Region - figure */
+  main figure img {
+    margin: 3%;
+    width: 250px;
+    height: 250px;
+    border-radius: 200px;
+  }
+  /* #End Region */
+
+  /* #Region - techs */
+  main .techs {
+    padding: 3%;
+    justify-content: space-between;
+  }
+
+  main .techs h2 {
+    font-size: 1.2em;
+  }
+
+  main .techs .cards-container .card {
+    width: 90px;
+    height: 90px;
+  }
+
+  main .techs .cards-container i {
+    font-size: 3em;
+  }
+  /* #End Region */
+
+  /* #Region - projects */
+  main .projects {
+    padding: 3%;
+  }
+
+  main .projects h2 {
+    font-size: 1.2em;
+  }
+  /* #End Region */
 }
 
 @media (max-width: 700px) {
+
+  /* #Region - Header */
   header {
     flex-direction: column;
     align-items: center;
@@ -51,7 +82,21 @@
   header nav a {
     font-size: 1.2em;
   }
+  /* #End Region */
 
+  /* #Region - main-content */
+  main .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .main-content .text h2, .main-content .techs h2 {
+    font-size: 1.2em;
+  }
+
+  /* #End Region */
+
+  /* #Region - Techs */
   main .techs .cards-container .card {
     width: 60px;
     height: 60px;
@@ -60,13 +105,9 @@
   main .techs .cards-container i {
     font-size: 2em;
   }
+  /* #End Region */
 
-  main .main-content .text h2, .main-content .techs h2 {
-    font-size: 1.2em;
-  }
+  /* #Region - Projects */
 
-  main figure img {
-    width: 250px;
-    height: 250px;
-  }
+  /* #End Region */
 }
