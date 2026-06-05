@@ -1,0 +1,25 @@
+# Sistema operacional
+Thumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+.DS_Store
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs e temporarios
+*.log
+*.tmp
+*.temp
+
+# Dependencias (caso adicione tooling JS no futuro)
+node_modules/
+
+# Variaveis de ambiente
+.env
+.env.*
+!.env.example
