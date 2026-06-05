@@ -38,6 +38,11 @@
     margin-bottom: 3%;
   }
 
+  main .techs .cards-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   main .techs .cards-container .card {
     width: 80px;
     height: 80px;
@@ -117,6 +122,11 @@
   }
 
   /* --- techs --- */
+
+  main .techs .cards-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   main .techs .cards-container .card {
     width: 60px;
